@@ -1,0 +1,67 @@
+﻿<Window
+    x:Class="Stroema.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Stroema"
+    Width="650"
+    Height="320"
+    mc:Ignorable="d"
+    ResizeMode="NoResize">
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="10                            " />
+        </Grid.RowDefinitions>
+        <Frame
+            x:Name="PagesFrame"
+            Grid.Row="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            NavigationUIVisibility="Hidden" />
+
+        <Button
+            x:Name="DruckverlustPageButton"
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="3"
+            BorderBrush="Black"
+            Click="DruckverlustPageButton_Click"
+            Content="Druckverlust" />
+        <Button
+            x:Name="VolumentstromPageButton"
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="3"
+            BorderBrush="Black"
+            Click="VolumentstromPageButton_Click"
+            Content="Volumenstrom" />
+        <Button
+            x:Name="RohrdurchmesserPageButton"
+            Grid.Row="2"
+            Grid.Column="3"
+            Margin="3"
+            BorderBrush="Black"
+            Click="RohrdurchmesserPageButton_Click"
+            Content="Rohrdurchmesser" />
+        <Button
+            x:Name="AboutPageButton"
+            Grid.Row="2"
+            Grid.Column="4"
+            Margin="3"
+            BorderBrush="Black"
+            Click="AboutPageButton_Click"
+            Content="About" />
+    </Grid>
+</Window>
