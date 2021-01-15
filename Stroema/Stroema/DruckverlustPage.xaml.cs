@@ -10,7 +10,10 @@ namespace Stroema
         public DruckverlustPage()
         {
             InitializeComponent();
+
+            DruckverlustBerechnenButton.IsEnabled = false;
         }
+
 
 
         private double _bezugsGeschwindigkeit;

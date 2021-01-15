@@ -44,6 +44,26 @@
             Grid.Row="1"
             Grid.Column="2"
             Margin="3" />
+        <!--> Volumenstrom Placeholder <-->
+        <TextBlock
+            x:Name="VolumenstromPlaceholder"
+            Grid.Row="1"
+            Grid.Column="2"
+            VerticalAlignment="Center"
+            IsHitTestVisible="False"
+            Opacity="0.5"
+            Text="   z.B. 5.47 [m³/h]">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=VolumenstromTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
         <Label
             x:Name="RohrdurchmesserLabel"
             Grid.Row="2"
@@ -55,6 +75,26 @@
             Grid.Row="2"
             Grid.Column="2"
             Margin="3" />
+        <!--> Rohrdurchmesser Placeholder <-->
+        <TextBlock
+            x:Name="RohrdurchmesserPlaceholder"
+            Grid.Row="2"
+            Grid.Column="2"
+            VerticalAlignment="Center"
+            IsHitTestVisible="False"
+            Opacity="0.5"
+            Text="   z.B. 0.0254 [m]">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=RohrdurchmesserTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
         <Label
             x:Name="RohrlaengeLabel"
             Grid.Row="3"
@@ -66,6 +106,26 @@
             Grid.Row="3"
             Grid.Column="2"
             Margin="3" />
+        <!--> Rohrlaenge Placeholder <-->
+        <TextBlock
+            x:Name="RohrlaengePlaceholder"
+            Grid.Row="3"
+            Grid.Column="2"
+            VerticalAlignment="Center"
+            IsHitTestVisible="False"
+            Opacity="0.5"
+            Text="   z.B. 400 [m]">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=RohrlaengeTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
         <Label
             x:Name="GHohenunterschiedLabel"
             Grid.Row="4"
@@ -77,6 +137,26 @@
             Grid.Row="4"
             Grid.Column="2"
             Margin="3" />
+        <!--> Geodätische Höhendifferenz Placeholder <-->
+        <TextBlock
+            x:Name="GHohenunterschidePlaceholder"
+            Grid.Row="4"
+            Grid.Column="2"
+            VerticalAlignment="Center"
+            IsHitTestVisible="False"
+            Opacity="0.5"
+            Text="   z.B. 20 [m]">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=GHohenunterschiedTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
         <Label
             x:Name="WandrauhigkeitLabel"
             Grid.Row="1"
@@ -88,11 +168,53 @@
             Grid.Row="1"
             Grid.Column="4"
             Margin="3" />
+        <!--> Wandrauhigkeit Placeholder <-->
+        <TextBlock
+            x:Name="WandrauhigkeitPlaceholder"
+            Grid.Row="1"
+            Grid.Column="4"
+            VerticalAlignment="Center"
+            IsHitTestVisible="False"
+            Opacity="0.5"
+            Text="   z.B. 15 [μm]">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=WandrauhigkeitTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
         <TextBox
             x:Name="DichteTextBox"
             Grid.Row="2"
             Grid.Column="4"
-            Margin="3" TextChanged="DichteTextBox_TextChanged" />
+            Margin="3"
+            TextChanged="DichteTextBox_TextChanged" />
+        <!--> Dichte Placeholder <-->
+        <TextBlock
+            x:Name="DichtePlaceholder"
+            Grid.Row="2"
+            Grid.Column="4"
+            VerticalAlignment="Center"
+            IsHitTestVisible="False"
+            Opacity="0.5"
+            Text="   z.B. 1000 [kg/m³]">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=DichteTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
         <Label
             x:Name="DichteLabel"
             Grid.Row="2"
@@ -104,6 +226,27 @@
             Grid.Row="3"
             Grid.Column="4"
             Margin="3" />
+        <!--> Viskosität Placeholder <-->
+
+        <TextBlock
+            x:Name="ViskositaetPlaceholder"
+            Grid.Row="3"
+            Grid.Column="4"
+            VerticalAlignment="Center"
+            IsHitTestVisible="False"
+            Opacity="0.5"
+            Text="   z.B. 1 [1E-06]">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=ViskositaetTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
         <Label
             x:Name="ViskositaetLabel"
             Grid.Row="3"
@@ -121,6 +264,25 @@
             Grid.Row="4"
             Grid.Column="4"
             Margin="3" />
+        <TextBlock
+            x:Name="DruckverlustbeiwertPlaceholder"
+            Grid.Row="4"
+            Grid.Column="4"
+            VerticalAlignment="Center"
+            IsHitTestVisible="False"
+            Opacity="0.5"
+            Text="   z.B. ???">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=DruckverlustbeiwertTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
         <Button
             x:Name="DruckverlustBerechnenButton"
             Grid.Row="6"
@@ -139,8 +301,7 @@
             x:Name="DruckverlustErgebnisTextBox"
             Grid.Row="6"
             Grid.Column="4"
-            Margin="3" />
-
-
+            Margin="3"
+            IsHitTestVisible="False" />
     </Grid>
 </Page>

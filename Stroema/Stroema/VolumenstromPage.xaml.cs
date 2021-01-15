@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace Stroema
 {
@@ -10,6 +11,9 @@ namespace Stroema
         public VolumenstromPage()
         {
             InitializeComponent();
+
+            VolumenstromBerechnenButton.IsEnabled = false;
+
         }
 
 

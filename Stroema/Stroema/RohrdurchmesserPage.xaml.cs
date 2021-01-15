@@ -10,6 +10,8 @@ namespace Stroema
         public RohrdurchmesserPage()
         {
             InitializeComponent();
+
+            RohrdurchmesserBerechnenButton.IsEnabled = false;
         }
     }
 }
