@@ -43,7 +43,8 @@
             x:Name="VolumenstromTextBox"
             Grid.Row="1"
             Grid.Column="2"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Volumenstrom Placeholder <-->
         <TextBlock
             x:Name="VolumenstromPlaceholder"
@@ -74,7 +75,8 @@
             x:Name="RohrdurchmesserTextBox"
             Grid.Row="2"
             Grid.Column="2"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Rohrdurchmesser Placeholder <-->
         <TextBlock
             x:Name="RohrdurchmesserPlaceholder"
@@ -105,7 +107,8 @@
             x:Name="RohrlaengeTextBox"
             Grid.Row="3"
             Grid.Column="2"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Rohrlaenge Placeholder <-->
         <TextBlock
             x:Name="RohrlaengePlaceholder"
@@ -136,7 +139,8 @@
             x:Name="GHohenunterschiedTextBox"
             Grid.Row="4"
             Grid.Column="2"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Geodätische Höhendifferenz Placeholder <-->
         <TextBlock
             x:Name="GHohenunterschidePlaceholder"
@@ -167,7 +171,8 @@
             x:Name="WandrauhigkeitTextBox"
             Grid.Row="1"
             Grid.Column="4"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Wandrauhigkeit Placeholder <-->
         <TextBlock
             x:Name="WandrauhigkeitPlaceholder"
@@ -188,12 +193,13 @@
                 </Style>
             </TextBlock.Style>
         </TextBlock>
-
+        <!--> Dichte Text Box <-->
         <TextBox
             x:Name="DichteTextBox"
             Grid.Row="2"
             Grid.Column="4"
             Margin="3"
+            PreviewTextInput="NumberValidationTextBox"
             TextChanged="DichteTextBox_TextChanged" />
         <!--> Dichte Placeholder <-->
         <TextBlock
@@ -215,19 +221,21 @@
                 </Style>
             </TextBlock.Style>
         </TextBlock>
+        <!--> Dichte Label <-->
         <Label
             x:Name="DichteLabel"
             Grid.Row="2"
             Grid.Column="3"
             Margin="3"
             Content="Dichte:" />
+        <!--> Viskosität Text Box <-->
         <TextBox
             x:Name="ViskositaetTextBox"
             Grid.Row="3"
             Grid.Column="4"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Viskosität Placeholder <-->
-
         <TextBlock
             x:Name="ViskositaetPlaceholder"
             Grid.Row="3"
@@ -247,23 +255,28 @@
                 </Style>
             </TextBlock.Style>
         </TextBlock>
+        <!--> Viskosität Label <-->
         <Label
             x:Name="ViskositaetLabel"
             Grid.Row="3"
             Grid.Column="3"
             Margin="3"
             Content="Viskosität:" />
+        <!--> Druckverlustbeiwert Label <-->
         <Label
             x:Name="DruckverlustbeiwertLabel"
             Grid.Row="4"
             Grid.Column="3"
             Margin="3"
             Content="Druckverlustbeiwert:" />
+        <!--> Druckverlustbeiwert Text Box <-->
         <TextBox
             x:Name="DruckverlustbeiwertTextBox"
             Grid.Row="4"
             Grid.Column="4"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
+        <!--> Druckverlustbeiwert Placeholder <-->
         <TextBlock
             x:Name="DruckverlustbeiwertPlaceholder"
             Grid.Row="4"
@@ -283,6 +296,7 @@
                 </Style>
             </TextBlock.Style>
         </TextBlock>
+        <!--> Druckverlust Berechnen Button <-->
         <Button
             x:Name="DruckverlustBerechnenButton"
             Grid.Row="6"
@@ -291,12 +305,14 @@
             Margin="3"
             BorderBrush="Black"
             Content="Berechnen" />
+        <!--> Druckverlust Ergebnis Label <-->
         <Label
             x:Name="DruckverlustErgebnisLabel"
             Grid.Row="6"
             Grid.Column="3"
             Margin="3"
             Content="Ergebnis:" />
+        <!--> Druckverlust Ergebnis Text Box <-->
         <TextBox
             x:Name="DruckverlustErgebnisTextBox"
             Grid.Row="6"

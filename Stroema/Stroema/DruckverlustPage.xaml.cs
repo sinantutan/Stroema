@@ -1,4 +1,7 @@
-﻿using System.Windows.Controls;
+﻿using System.Text.RegularExpressions;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Input;
 
 namespace Stroema
 {
@@ -11,7 +14,7 @@ namespace Stroema
         {
             InitializeComponent();
 
-            DruckverlustBerechnenButton.IsEnabled = false;
+
         }
 
 
@@ -34,5 +37,13 @@ namespace Stroema
         {
 
         }
+
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9.]+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
+        
     }
 }

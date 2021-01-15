@@ -44,7 +44,8 @@
             x:Name="VolumenstromTextBox"
             Grid.Row="1"
             Grid.Column="2"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Volumenstrom Placeholder <-->
         <TextBlock
             x:Name="VolumenstromPlaceholder"
@@ -75,7 +76,8 @@
             x:Name="DruckverlustTextBox"
             Grid.Row="2"
             Grid.Column="2"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Druckverlust Placeholder <-->
         <TextBlock
             x:Name="DruckverlustPlaceholder"
@@ -106,7 +108,8 @@
             x:Name="RohrlaengeTextBox"
             Grid.Row="3"
             Grid.Column="2"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Rohrlaenge Placeholder <-->
         <TextBlock
             x:Name="RohrlaengePlaceholder"
@@ -137,7 +140,8 @@
             x:Name="GHohenunterschiedTextBox"
             Grid.Row="4"
             Grid.Column="2"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Geodätische Höhendifferenz Placeholder <-->
         <TextBlock
             x:Name="GHohenunterschidePlaceholder"
@@ -168,7 +172,8 @@
             x:Name="WandrauhigkeitTextBox"
             Grid.Row="1"
             Grid.Column="4"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Wandrauhigkeit Placeholder <-->
         <TextBlock
             x:Name="WandrauhigkeitPlaceholder"
@@ -194,7 +199,8 @@
             x:Name="DichteTextBox"
             Grid.Row="2"
             Grid.Column="4"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Dichte Placeholder <-->
         <TextBlock
             x:Name="DichtePlaceholder"
@@ -225,7 +231,8 @@
             x:Name="ViskositaetTextBox"
             Grid.Row="3"
             Grid.Column="4"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <!--> Viskosität Placeholder <-->
 
         <TextBlock
@@ -263,7 +270,8 @@
             x:Name="DruckverlustbeiwertTextBox"
             Grid.Row="4"
             Grid.Column="4"
-            Margin="3" />
+            Margin="3"
+            PreviewTextInput="NumberValidationTextBox" />
         <TextBlock
             x:Name="DruckverlustbeiwertPlaceholder"
             Grid.Row="4"
