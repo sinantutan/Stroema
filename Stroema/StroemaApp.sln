@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stroema", "Stroema\Stroema.csproj", "{89F32198-FF68-4E96-9102-5A75B35438E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stroemung", "Stroemung\Stroemung.csproj", "{93F93102-9E50-4487-BE27-CEFF4E53D13B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stroemung", "Stroemung\Stroemung.csproj", "{93F93102-9E50-4487-BE27-CEFF4E53D13B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StroemungTest", "StroemungTest\StroemungTest.csproj", "{9031602B-2E1C-40E2-A4AD-70597526C2CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{93F93102-9E50-4487-BE27-CEFF4E53D13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93F93102-9E50-4487-BE27-CEFF4E53D13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93F93102-9E50-4487-BE27-CEFF4E53D13B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9031602B-2E1C-40E2-A4AD-70597526C2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9031602B-2E1C-40E2-A4AD-70597526C2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9031602B-2E1C-40E2-A4AD-70597526C2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9031602B-2E1C-40E2-A4AD-70597526C2CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
