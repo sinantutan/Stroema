@@ -2,7 +2,7 @@
 
 namespace Stroemung.Rohrreibung
 {
-{
+
 	public class ReynoldsZahl
 	{
 		public double value { get; }
@@ -13,6 +13,7 @@ namespace Stroemung.Rohrreibung
 
 		public ReynoldsZahl(double rho, double v, double d, double eta) { value = calculate(v, d, dyn_to_kin_viscosity(eta, rho)); }
 
+		
 		public double calculate(double v, double d, double nu) { return v * d / nu; }
 
 		public double dyn_to_kin_viscosity(double eta, double rho) { return eta / rho; }

@@ -41,8 +41,7 @@
             Grid.Column="1"
             Margin="3"
             Content="Druckabfall:" />
-
-
+        <!--> Druckabfall Text Box <-->
         <TextBox
             x:Name="DruckabfallTextBox"
             Grid.Row="1"
@@ -307,7 +306,7 @@
             Grid.ColumnSpan="2"
             Margin="3"
             BorderBrush="Black"
-            Content="Berechnen" />
+            Content="Berechnen" Click="VolumenstromBerechnenButton_Click" />
         <Label
             x:Name="VolumenstromErgebnisLabel"
             Grid.Row="6"
