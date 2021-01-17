@@ -3,7 +3,7 @@ using System;
 
 namespace Stroemung
 {
-	class Volumenstrom
+	public class Volumenstrom
 	{
 		private const double g = 9.81F;
 
@@ -13,11 +13,12 @@ namespace Stroemung
 		public double lambda_0 { get; set; } = 0.02F;
 		public double lambda { get; set; }
 	
-		Volumenstrom() { }
+		public Volumenstrom() { }
 
-		Volumenstrom(double delta_p, double d, double L, double k, double delta_h, double rho, double nu, double zeta_zu)
+		public Volumenstrom(double delta_p, double d, double L, double k, double delta_h, double rho, double nu, double zeta_zu)
 		{
 			lambda = iterate_lambda(delta_p, rho, delta_h, L, d, zeta_zu, nu, k);
+			value = calcucate_Volumenstrom(rho, delta_h, lambda, L, d);
 		}
 
 		public double iterate_lambda(double delta_p, double rho, double delta_h, double L, double d, double zeta_zu, double nu, double k)
@@ -50,9 +51,9 @@ namespace Stroemung
 			return Math.Abs((lambda - lambda_0) / lambda);
 		}
 
-		public double calcucate_Volumenstrom(double rho, double delta_h, double lambda, double L)
+		public double calcucate_Volumenstrom(double rho, double delta_h, double lambda, double L, double d)
 		{
-			return 0.0;
+			return Math.PI / 4d * Math.Pow(d, 2) * v;
 		}
 	}
 }
