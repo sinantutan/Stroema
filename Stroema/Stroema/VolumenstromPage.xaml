@@ -56,7 +56,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. ???">
+            Text="   z.B. 15,43 [m³/h]">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
@@ -74,7 +74,6 @@
             Grid.Column="1"
             Margin="3"
             Content="Rohrdurchmesser:" />
-
         <TextBox
             x:Name="RohrdurchmesserTextBox"
             Grid.Row="2"
@@ -89,7 +88,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. 0.0254 [m]">
+            Text="   z.B. 0,0254 [m]">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
@@ -146,7 +145,6 @@
             Margin="3"
             PreviewTextInput="NumberValidationTextBox" />
         <!--> Geodätische Höhendifferenz Placeholder <-->
-
         <TextBlock
             x:Name="GHohenunterschidePlaceholder"
             Grid.Row="4"
@@ -172,7 +170,6 @@
             Grid.Column="3"
             Margin="3"
             Content="Wandrauhigkeit:" />
-
         <TextBox
             x:Name="WandrauhigkeitTextBox"
             Grid.Row="1"
@@ -180,7 +177,6 @@
             Margin="3"
             PreviewTextInput="NumberValidationTextBox" />
         <!--> Wandrauhigkeit Placeholder <-->
-
         <TextBlock
             x:Name="WandrauhigkeitPlaceholder"
             Grid.Row="1"
@@ -232,7 +228,6 @@
             Grid.Column="3"
             Margin="3"
             Content="Dichte:" />
-
         <TextBox
             x:Name="ViskositaetTextBox"
             Grid.Row="3"
@@ -240,7 +235,6 @@
             Margin="3"
             PreviewTextInput="NumberValidationTextBox" />
         <!--> Viskosität Placeholder <-->
-
         <TextBlock
             x:Name="ViskositaetPlaceholder"
             Grid.Row="3"
@@ -279,7 +273,6 @@
             Margin="3"
             PreviewTextInput="NumberValidationTextBox" />
         <!--> Druckverlustbeiwert Placeholder <-->
-
         <TextBlock
             x:Name="DruckverlustbeiwertPlaceholder"
             Grid.Row="4"
@@ -287,7 +280,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. ???">
+            Text="   z.B. 0,5">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
@@ -306,7 +299,8 @@
             Grid.ColumnSpan="2"
             Margin="3"
             BorderBrush="Black"
-            Content="Berechnen" Click="VolumenstromBerechnenButton_Click" />
+            Click="VolumenstromBerechnenButton_Click"
+            Content="Berechnen" />
         <Label
             x:Name="VolumenstromErgebnisLabel"
             Grid.Row="6"

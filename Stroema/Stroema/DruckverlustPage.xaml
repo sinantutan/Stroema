@@ -53,7 +53,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. 5.47 [m³/h]">
+            Text="   z.B. 5,47 [m³/h]">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
@@ -85,7 +85,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. 0.0254 [m]">
+            Text="   z.B. 0,0254 [m]">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
@@ -135,6 +135,7 @@
             Grid.Column="1"
             Margin="3"
             Content="G. Höhenunterschied:" />
+
         <TextBox
             x:Name="GHohenunterschiedTextBox"
             Grid.Row="4"
@@ -161,12 +162,14 @@
                 </Style>
             </TextBlock.Style>
         </TextBlock>
+        <!--> Wandrauhigkeit Label <-->
         <Label
             x:Name="WandrauhigkeitLabel"
             Grid.Row="1"
             Grid.Column="3"
             Margin="3"
             Content="Wandrauhigkeit:" />
+        <!--> Wandrauhigkeit Text Box <-->
         <TextBox
             x:Name="WandrauhigkeitTextBox"
             Grid.Row="1"
@@ -284,7 +287,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. ???">
+            Text="   z.B. 0,5">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
