@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Stroemung;
 
 namespace StroemungTest
@@ -19,9 +15,15 @@ namespace StroemungTest
 			double rho = 1000; //kg/m^3
 			double nu = 0.000001; //-
 			double zeta_zu = 0.5; //-
+			double V = 5.47 / 3600; //m^3/s
 
 			Volumenstrom volumen = new Volumenstrom(delta_p, d, L, k, delta_h, rho, nu, zeta_zu);
 			Console.WriteLine(volumen.value);
+
+			Rohrdurchmesser rohrduchmesser = new Rohrdurchmesser(delta_p, V, L, k, delta_h, rho, nu, zeta_zu);
+
+			Console.WriteLine("ICH HABE FERTITG");
+			Console.WriteLine(rohrduchmesser.v + " " + rohrduchmesser.d);
 			Console.ReadLine();
 		}
 	}

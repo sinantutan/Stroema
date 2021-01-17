@@ -8,7 +8,7 @@ namespace Stroemung
 		private const double g = 9.81F;
 
 		public double value { get; }
-		public double epsilon_lambda { get; set; } = 0.1;
+		public double epsilon_lambda { get; set; } = 0.01;
 		public double v { get; set; }
 		public double lambda_0 { get; set; } = 0.02F;
 		public double lambda { get; set; }
@@ -36,6 +36,7 @@ namespace Stroemung
 				else lambda_0 = lambda; 
 
 				if (trials >= max_trials) is_finished = true;
+				trials += trials;
 			}
 
 			return lambda;
