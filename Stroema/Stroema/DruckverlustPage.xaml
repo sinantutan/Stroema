@@ -302,9 +302,9 @@
             Grid.Row="6"
             Grid.Column="1"
             Grid.ColumnSpan="2"
-            Margin="3"
+            Margin="3,3,3,3"
             BorderBrush="Black"
-            Content="Berechnen" />
+            Content="Berechnen" Click="DruckverlustBerechnenButton_Click" />
         <!--> Druckverlust Ergebnis Label <-->
         <Label
             x:Name="DruckverlustErgebnisLabel"

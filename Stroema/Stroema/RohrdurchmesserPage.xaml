@@ -298,7 +298,7 @@
             Grid.ColumnSpan="2"
             Margin="3"
             BorderBrush="Black"
-            Content="Berechnen" />
+            Content="Berechnen" Click="RohrdurchmesserBerechnenButton_Click" />
         <Label
             x:Name="DruckverlustErgebnisLabel"
             Grid.Row="6"

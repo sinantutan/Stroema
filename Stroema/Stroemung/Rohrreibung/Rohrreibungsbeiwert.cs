@@ -27,7 +27,7 @@ namespace Stroemung.Rohrreibung
 		}
 
 		public Hyd_Rauheit hydraulische_Rauheit(ReynoldsZahl Re, double k, double d) {
-			var temp = Math.Pow(Re.value, 7/8) * k / d;
+			var temp = Math.Pow(Re.value, (double)7/8) * k / d;
 
 			if (temp <= 5) return Hyd_Rauheit.glatt;
 			else if (temp <= 225) return Hyd_Rauheit.uebergang;
@@ -43,22 +43,37 @@ namespace Stroemung.Rohrreibung
 			else /*Rohrstroemung.turbulent*/ {
 				if (hydraulische_Rauheit(Re, k, d) == Hyd_Rauheit.glatt)
 				{
-					if (Re.value > Math.Pow(10, 5)) value = calculate_Hermann();
-					else value = calculate_Blasius();
+                    if (Re.value > Math.Pow(10, 5))
+                    {
+                        value = calculate_Hermann(Re);
+                        Console.WriteLine("calculated with Hermann" + value);
+					}
+                    else
+                    {
+                        value = calculate_Blasius(Re);
+                        Console.WriteLine("calculated with Blasius" + value);
+					}
+                    
 				}
 				else if (hydraulische_Rauheit(Re, k, d) == Hyd_Rauheit.uebergang)
 				{
-					value = calculate_Pham(k, d);
+					value = calculate_Pham(k, d, Re);
+                    Console.WriteLine("calculated with Pham" + value);
+                }
+                else
+                {
+
+                    value = calculate_Nikuradse(k, d, Re);
+                    Console.WriteLine("calculated with Niku" + value);
 				}
-				else value = calculate_Nikuradse(k, d);
 			}
 			return value;
 		}
 
-		private double calculate_Hermann() { return 0.0032 + 0.221 * Math.Pow(Re.value, -0.237); }
-		private double calculate_Blasius() { return 0.3164 / Math.Pow(Re.value, 1 / 4); }
-		private double calculate_Pham(double k, double d) { return Math.Pow(-2 * Math.Log10(k / 3.7 / d - 4.52 / Re.value * Math.Log10(7 / Re.value + k / 7 / d)), -2); }
-		private double calculate_Nikuradse(double k, double d) { return Math.Pow(2 * Math.Log10(d/k) + 1.138, -2);  }
+		private double calculate_Hermann(ReynoldsZahl Re) { return 0.0032 + 0.221 * Math.Pow(Re.value, -0.237d);  }
+		private double calculate_Blasius(ReynoldsZahl Re) { return 0.3164 / Math.Pow(Re.value,(double) 1 / 4); }
+		private double calculate_Pham(double k, double d, ReynoldsZahl Re) { return Math.Pow(-2d * Math.Log10(k / 3.7 / d - 4.52 / Re.value * Math.Log10(7 / Re.value + k / 7 / d)), (double)-2); }
+		private double calculate_Nikuradse(double k, double d, ReynoldsZahl Re) { return Math.Pow(2 * Math.Log10(d/k) + 1.138,-2);  }
 
 	}
 }
