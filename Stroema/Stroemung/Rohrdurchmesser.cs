@@ -40,8 +40,6 @@ namespace Stroemung
 
 				lambda = new Rohrreibungsbeiwert(v, d, nu, k).value;
 
-				Console.WriteLine("Durchmesser: " + d + " Geschwindigkeit: " + v);
-				Console.WriteLine("Lambda: " + lambda + " Lambda_0: " + lambda_0);
 
 				if (calculate_error_lambda(lambda, lambda_0) >= epsilon_lambda) lambda_0 = lambda;
 				else is_finished = true;
@@ -49,9 +47,6 @@ namespace Stroemung
 				if (trials >= max_trials) is_finished = true;
 				trials++;
 			}
-
-			Console.WriteLine(v + " " + d);
-
 		}
 
 		public double iterate_d(double rho, double V, double L, double delta_p, double delta_h, double zeta_zu, double lambda)
