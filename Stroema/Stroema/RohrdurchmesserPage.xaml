@@ -54,7 +54,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. 5.47 [m³/h]">
+            Text="   z.B. 5,47 [m³/h]">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
@@ -86,7 +86,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. 16.43 [bar]">
+            Text="   z.B. 15,43 [bar]">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
@@ -279,7 +279,7 @@
             VerticalAlignment="Center"
             IsHitTestVisible="False"
             Opacity="0.5"
-            Text="   z.B. ???">
+            Text="   z.B. 0,5">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed" />
@@ -298,7 +298,8 @@
             Grid.ColumnSpan="2"
             Margin="3"
             BorderBrush="Black"
-            Content="Berechnen" Click="RohrdurchmesserBerechnenButton_Click" />
+            Click="RohrdurchmesserBerechnenButton_Click"
+            Content="Berechnen" />
         <Label
             x:Name="DruckverlustErgebnisLabel"
             Grid.Row="6"

@@ -31,7 +31,7 @@ namespace Stroema
 
         private void AboutPageButton_Click(object sender, RoutedEventArgs e)
         {
-
+            PagesFrame.Content = new  AboutPage();
         }
     }
 }
