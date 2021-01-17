@@ -27,7 +27,13 @@ namespace Stroema
             double volumenstromValue;
             double.TryParse(VolumenstromTextBox.Text, out volumenstromValue);
 
-            
+            double druckverlustValue;
+            double.TryParse(DruckverlustTextBox.Text, out druckverlustValue);
+
+            double rohrlaengeValue;
+            double.TryParse(RohrlaengeTextBox.Text, out rohrlaengeValue);
+
+
         }
     }
 }
