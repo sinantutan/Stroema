@@ -53,7 +53,7 @@ namespace Stroemung
 
 		public double calcucate_Volumenstrom(double rho, double delta_h, double lambda, double L, double d)
 		{
-			return Math.PI / 4d * Math.Pow(d, 2) * v;
+			return Math.PI / 4d * Math.Pow(d, 2) * v * 3600d;
 		}
 	}
 }
