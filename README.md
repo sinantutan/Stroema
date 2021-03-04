@@ -1,2 +1,2 @@
 # Stroema
-berechnet Volumenstrom, Drucverlust und Rohrdurchmesser
+berechnet Volumenstrom, Druckverlust und Rohrdurchmesser
